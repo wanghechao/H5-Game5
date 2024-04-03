@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigbox{
+    width: 350px;
+    height: 600px;
+    border: 1px solid black;
+    position: relative;
+    background: url("../img/bj.png") 100%/100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.music{
+    position: absolute;
+    width: 12%;
+    height: 7%;
+    top: 3%;
+    left: 3%;
+    background: url(../img/neiron2/bgm\ on.png) 100%/100% no-repeat;
+    animation: music_rotate 5s linear infinite;
+    cursor: pointer;
+    z-index: 99;
+}
+
+@keyframes music_rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.alldl {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    top: 0;
+    right: 0;
+    z-index: 6;
+}
+
+.alldl :nth-child(1) {
+    position: absolute;
+    width: 60px;
+    height: 80%;
+    top: -8px;
+    left: 20%;
+    background: url(../img/neiron2/灯笼1.png)  70%/70% no-repeat;
+    transform-origin: top center;
+}
+
+.alldl :nth-child(2) {
+    position: absolute;
+    width: 60px;
+    height: 80%;
+    left: 20px;
+    background: url(../img/neiron2/灯笼2.png) 100%/100%;
+    transform-origin: top center;
+}
+
+.alldl :nth-child(3) {
+    position: absolute;
+    width: 60px;
+    height: 80%;
+    top: -8px;
+    right: 20%;
+    background: url(../img/neiron2/灯笼2.png) 100%/100%;
+    transform-origin: top center;
+}
+
+.alldl :nth-child(4) {
+    position: absolute;
+    width: 60px;
+    height: 80%;
+    right: 20px;
+    background: url(../img/neiron2/灯笼2.png) 100%/100%;
+    transform-origin: top center;
+}
+
+@keyframes dl_rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: rotate(5deg);
+    }
+    60%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+/* 上与下边背景 */
+.allshangbj {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 0%;
+}
+
+.shangbj {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.allshangbj :nth-child(1) {
+    background: url(../img/neiron2/上边背景3.png) 100%/100% no-repeat;
+    animation: up_move 2s 0.6s forwards;
+    transform: translate( 0 , -300px);
+}
+.allshangbj :nth-child(2) {
+    background: url(../img/neiron2/上边背景2.png)  100%/100% no-repeat ;
+    background-position: 0 0;
+    animation: up_move 2s 0.3s forwards;
+    transform: translate( 0 , -300px);
+}
+.allshangbj :nth-child(3) {
+    background: url(../img/neiron2/上边背景1.png) 100%/100% no-repeat;
+    animation: up_move 2s ;
+}
+
+@keyframes up_move {
+    0%{
+        transform: translate( 0 , -100px);
+    }
+    100%{
+        transform: translate( 0 , 0px);
+    }
+}
+
+.allxiabj {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0%;
+    border: 1px solid black;
+}
+
+ .xiabj{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+ }
+   
+
+.allxiabj :nth-child(1) {
+    background: url(../img/neiron2/下边背景3.png) 0% 100%/100% no-repeat;
+    animation: down_move 2s 0.6s forwards;
+    transform: translate( 0 , 100px);
+}
+.allxiabj :nth-child(2) {
+    background: url(../img/neiron2/下边背景2.png) 0% 100%/100% no-repeat;
+    animation: down_move 2s 0.3s forwards;
+    transform: translate( 0 , 100px);
+}
+.allxiabj :nth-child(3) {
+    background: url(../img/neiron2/下边背景1.png) 0% 100%/100% no-repeat;
+    animation: down_move 2s forwards;
+}
+
+@keyframes down_move {
+    0%{
+        transform: translate( 0 , 100px);
+    }
+    100%{
+        transform: translate( 0 , 0px);
+    }
+}
+/* 上与下边背景 */
+
+
+
+/* 幕布 */
+
+.mubu {
+    position: absolute;
+    top:35%;
+    width: 80%;
+    height: 45%;
+    background: url(../img/neiron2/幕布.png);
+    overflow: hidden;
+    animation: mubu 3s forwards;
+}
+
+@keyframes mubu {
+    0%{
+        transform: translate(0px , 300px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+
+.yuanbj {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    bottom: 0%;
+    background: url(../img/neiron6/圆背景.png) 90%/90% no-repeat;
+}
+
+.biaoqing {
+    position: absolute;
+    left: 26%;
+    top: 16%;
+    width: 50%;
+    height: 50%;
+    animation: biaoqing 5s ;
+    background:url(../img/neiron6/可怜.png) center 90%/90% no-repeat;
+}
+
+@keyframes biaoqing{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(720deg);
+    }
+}
+
+.mubu .right_tiao {
+    position: absolute;
+    top: 0px;
+    height: 10%;
+    width: 800px;
+    background: url(../img/neiron2/幕布上花边.png) 300px/300px repeat-x;
+     animation: up_tiao 7s linear infinite; 
+}
+
+.mubu .left_tiao {
+    position: absolute;
+    top: 0px;
+    height: 10%;
+    width: 800px;
+    background: url(../img/neiron2/幕布上花边.png) 300px/300px repeat-x;
+    transform: translate(300px , 0px );
+    animation: up_tiao 7s linear infinite 1s reverse;
+}
+
+@keyframes up_tiao{
+    0%{
+        transform: translate(-1000px , 0px );
+    }
+    100%{
+        transform: translate(300px , 0px );
+    }
+}
+
+@keyframes loop_tiao {
+    0%{
+        transform: translate(-300px , 0px );
+    }
+    100%{
+        transform: translate(0px , 0px );
+    }
+}
+
+/* 娃娃机文字 */
+.wwj_text {
+    position: absolute;
+    top: 19%;
+    width: 80%;
+    height: 17%;
+    background: url(../img/neiron4/娃娃机文字.png) 100%/100% no-repeat;
+    animation: wwj_animate 3s forwards;
+}
+
+@keyframes wwj_animate{
+    0%{
+        transform: translate(0px , -300px);
+    }
+    100%{
+        transform: translate(0px , 0px);
+    }
+}
+
+
+.fanhui {
+    position: absolute;
+    width: 35%;
+    height: 7%;
+    right: 10%;
+    bottom: 7%;
+    background: url(../img/neiron6/返回首页.png) 100%/100% no-repeat;
+    cursor: pointer;
+}
+.regame {
+    position: absolute;
+    width: 35%;
+    height: 7%;
+    left: 10%;
+    bottom: 7%;
+    background: url(../img/neiron6/重新开始.png) 100%/100% no-repeat;
+    cursor: pointer;
+}
